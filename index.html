@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty Lawn Guys | Professional Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558905619-171426efb452?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-card:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-green-700 flex items-center">
+                        <i class="fas fa-leaf mr-2"></i>Nifty Lawn Guys
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-green-600 transition">Home</a>
+                    <a href="#about" class="hover:text-green-600 transition">About</a>
+                    <a href="#work" class="hover:text-green-600 transition">Our Work</a>
+                    <a href="#estimate" class="bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition">Free Estimate</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">The Best Lawn on the Block.</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-100">Professional lawn maintenance and landscaping for homeowners who value a pristine outdoor space.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#estimate" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg">Get Your Free Estimate</a>
+                <a href="#work" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg">View Our Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=800" alt="Lawn Care Professional" class="rounded-2xl shadow-2xl">
+                </div>
+                <div>
+                    <h2 class="text-green-700 font-bold uppercase tracking-widest text-sm mb-4">About Nifty Lawn Guys</h2>
+                    <h3 class="text-4xl font-bold mb-6 leading-tight">We Treat Your Lawn Like Our Own</h3>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Hi, I'm the founder of Nifty Lawn Guys. What started as a hobby in my own backyard has grown into a full-service lawn care business serving our local community. 
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8">
+                        We believe that a beautiful lawn shouldn't be a hassle. That's why we focus on reliability, detail-oriented service, and eco-friendly practices to ensure your grass is always greener on your side of the fence.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-green-100 p-2 rounded-full text-green-700">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-semibold italic">Reliable Weekly Care</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-green-100 p-2 rounded-full text-green-700">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-semibold italic">Organic Fertilization</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-green-100 p-2 rounded-full text-green-700">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-semibold italic">Precision Edging</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-green-100 p-2 rounded-full text-green-700">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-semibold italic">Seasonal Cleanup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Gallery Section -->
+    <section id="work" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Work</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Recent projects we've completed for our satisfied clients. From simple mows to complete landscape overhauls.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-card relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=600" alt="Mowing Project" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-green-900 bg-opacity-70 opacity-0 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+                        <div>
+                            <h4 class="text-white text-xl font-bold">Standard Maintenance</h4>
+                            <p class="text-green-100 mt-2 italic">Professional mow, trim, and edge for a suburban estate.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-card relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1599591037488-8a30618b6534?auto=format&fit=crop&q=80&w=600" alt="Edging Project" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-green-900 bg-opacity-70 opacity-0 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+                        <div>
+                            <h4 class="text-white text-xl font-bold">Curb Appeal Focus</h4>
+                            <p class="text-green-100 mt-2 italic">Precision driveway and sidewalk edging service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-card relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&q=80&w=600" alt="Leaf Cleanup" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-green-900 bg-opacity-70 opacity-0 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
+                        <div>
+                            <h4 class="text-white text-xl font-bold">Seasonal Cleanup</h4>
+                            <p class="text-green-100 mt-2 italic">Full property clearing and debris removal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimate Form Section -->
+    <section id="estimate" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-green-700 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-12 text-white">
+                    <h2 class="text-4xl font-bold mb-6 italic">Ready for a Nifty Lawn?</h2>
+                    <p class="text-green-100 mb-8 text-lg">Fill out this quick form and I'll get back to you within 24 hours with a personalized quote for your property.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-green-600 p-3 rounded-full">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-green-200 text-sm">Call or Text</p>
+                                <p class="font-bold text-lg">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-green-600 p-3 rounded-full">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-green-200 text-sm">Email Us</p>
+                                <p class="font-bold text-lg">hello@niftylawnguys.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white p-12">
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition" placeholder="(555) 000-0000">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Service Address</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition" placeholder="123 Grass Way, Greenview">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Service Needed</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                                <option>Weekly Mowing</option>
+                                <option>Bi-Weekly Mowing</option>
+                                <option>Seasonal Cleanup</option>
+                                <option>Other / Landscaping</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Any specific details?</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition" placeholder="Tell us about your lawn size, frequency, or special requests..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg shadow-lg transition transform active:scale-95">
+                            Submit Request
+                        </button>
+                    </form>
+                    <div id="successMessage" class="hidden text-center p-4 bg-green-50 text-green-700 rounded-lg mt-4 border border-green-200">
+                        <i class="fas fa-check-circle mb-2 text-2xl"></i>
+                        <p class="font-bold">Thanks for reaching out!</p>
+                        <p class="text-sm">We've received your request and will contact you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center items-center mb-6">
+                <span class="text-3xl font-bold text-green-500 flex items-center">
+                    <i class="fas fa-leaf mr-2"></i>Nifty Lawn Guys
+                </span>
+            </div>
+            <p class="text-gray-400 mb-8">Serving our local community with pride since 2018.</p>
+            <div class="flex justify-center space-x-6 mb-8 text-2xl">
+                <a href="#" class="hover:text-green-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-green-500 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-green-500 transition"><i class="fab fa-nextdoor"></i></a>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-gray-500 text-sm">
+                &copy; <span id="year"></span> Nifty Lawn Guys. All rights reserved. Professional Care, Nifty Results.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Form Submission Handling
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real app, you'd send data to a server here.
+            form.classList.add('hidden');
+            successMsg.classList.remove('hidden');
+        });
+
+        // Mobile Menu Toggle (Basic)
+        const mobileBtn = document.getElementById('mobile-menu-button');
+        mobileBtn.addEventListener('click', () => {
+            document.querySelector('.hidden.md\\:flex').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
